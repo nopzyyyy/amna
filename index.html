@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Visualizer & Header Section -->
+    <header class="hero-section">
+        <canvas id="visualizer"></canvas>
+        <div class="audio-controls">
+            <button id="playBtn" class="play-btn">
+                <span id="playIcon">▶</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Message Section (Directly attached to header, no gap) -->
+    <section class="message-section">
+        <div class="message-content">
+            <h2>To My Favorite Person</h2>
+            <p>
+                Every moment with you is a memory I want to keep forever. 
+                From the laughter to the quiet moments, you make everything better.
+                Here's a little collection of us.
+            </p>
+            <p class="signature">With love always</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section (Directly attached to message, no gap) -->
+    <section class="gallery-section">
+        <div class="gallery-grid">
+            <div class="gallery-item" onclick="openLightbox('New folder/109953B2-AC48-430A-8527-6E41E09A0A3E.jpg', 'image')">
+                <img src="New folder/109953B2-AC48-430A-8527-6E41E09A0A3E.jpg" loading="lazy" alt="Memory">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('New folder/1884F4D5-B935-445B-BE89-6CA435692284.jpg', 'image')">
+                <img src="New folder/1884F4D5-B935-445B-BE89-6CA435692284.jpg" loading="lazy" alt="Memory">
+            </div>
+            <div class="gallery-item video-item" onclick="openLightbox('New folder/23155e16788d486491feb3e9f793f79e.mov', 'video')">
+                <video src="New folder/23155e16788d486491feb3e9f793f79e.mov" muted loop playsinline></video>
+                <div class="play-overlay">▶</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox('New folder/393893A8-7C47-4DEF-A160-CF3801B12157.jpg', 'image')">
+                <img src="New folder/393893A8-7C47-4DEF-A160-CF3801B12157.jpg" loading="lazy" alt="Memory">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('New folder/5B2D4608-0AE7-480E-8CED-B238C5B7AEDF.jpg', 'image')">
+                <img src="New folder/5B2D4608-0AE7-480E-8CED-B238C5B7AEDF.jpg" loading="lazy" alt="Memory">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('New folder/6DC3D7A5-420F-4819-AB14-0745960F3ECD.jpg', 'image')">
+                <img src="New folder/6DC3D7A5-420F-4819-AB14-0745960F3ECD.jpg" loading="lazy" alt="Memory">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('New folder/7370561F-00BD-4853-AA2F-52256882EFB1.jpg', 'image')">
+                <img src="New folder/7370561F-00BD-4853-AA2F-52256882EFB1.jpg" loading="lazy" alt="Memory">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('New folder/78BFE97B-F5C9-4B41-86D6-F683D211346E.jpg', 'image')">
+                <img src="New folder/78BFE97B-F5C9-4B41-86D6-F683D211346E.jpg" loading="lazy" alt="Memory">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('New folder/82CAFE62-258D-492B-B44A-E9C5C5CD354D.jpg', 'image')">
+                <img src="New folder/82CAFE62-258D-492B-B44A-E9C5C5CD354D.jpg" loading="lazy" alt="Memory">
+            </div>
+            <div class="gallery-item video-item" onclick="openLightbox('New folder/888d446b3ff440058bcfeb5cd7443068.mov', 'video')">
+                <video src="New folder/888d446b3ff440058bcfeb5cd7443068.mov" muted loop playsinline></video>
+                <div class="play-overlay">▶</div>
+            </div>
+            <div class="gallery-item video-item" onclick="openLightbox('New folder/8db52c367f1048be82cf5efd237cfb79.mov', 'video')">
+                <video src="New folder/8db52c367f1048be82cf5efd237cfb79.mov" muted loop playsinline></video>
+                <div class="play-overlay">▶</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox('New folder/94AC984D-733B-4D66-ACE2-BAC228F83A59.jpg', 'image')">
+                <img src="New folder/94AC984D-733B-4D66-ACE2-BAC228F83A59.jpg" loading="lazy" alt="Memory">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('New folder/96FAEEBB-7F64-4175-8E87-5EAC64B39296.jpg', 'image')">
+                <img src="New folder/96FAEEBB-7F64-4175-8E87-5EAC64B39296.jpg" loading="lazy" alt="Memory">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('New folder/9B31BD21-7157-400E-937D-76D86895EDDA.jpg', 'image')">
+                <img src="New folder/9B31BD21-7157-400E-937D-76D86895EDDA.jpg" loading="lazy" alt="Memory">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('New folder/AA35AB43-4060-45A0-99FD-91FA3CC9E67C.jpg', 'image')">
+                <img src="New folder/AA35AB43-4060-45A0-99FD-91FA3CC9E67C.jpg" loading="lazy" alt="Memory">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('New folder/AB92E1CC-08D5-460C-A496-7BF59968850C.jpg', 'image')">
+                <img src="New folder/AB92E1CC-08D5-460C-A496-7BF59968850C.jpg" loading="lazy" alt="Memory">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('New folder/B856EBD8-A04E-41EC-9413-FB3780C2AB6C.jpg', 'image')">
+                <img src="New folder/B856EBD8-A04E-41EC-9413-FB3780C2AB6C.jpg" loading="lazy" alt="Memory">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('New folder/C3A6FAA2-D648-4F5B-916E-AE3A6118DCEF.jpg', 'image')">
+                <img src="New folder/C3A6FAA2-D648-4F5B-916E-AE3A6118DCEF.jpg" loading="lazy" alt="Memory">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('New folder/CAACA5DC-20EA-44E8-8425-5CE8BC4391F9.jpg', 'image')">
+                <img src="New folder/CAACA5DC-20EA-44E8-8425-5CE8BC4391F9.jpg" loading="lazy" alt="Memory">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('New folder/E3F71E85-AEA3-4C36-8778-4DE424CB3DD8.jpg', 'image')">
+                <img src="New folder/E3F71E85-AEA3-4C36-8778-4DE424CB3DD8.jpg" loading="lazy" alt="Memory">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('New folder/F3E342C0-EFF9-4662-8A01-852B808684F5.jpg', 'image')">
+                <img src="New folder/F3E342C0-EFF9-4662-8A01-852B808684F5.jpg" loading="lazy" alt="Memory">
+            </div>
+            <div class="gallery-item video-item" onclick="openLightbox('New folder/e745f418663f4649924d9daa420ca712.mov', 'video')">
+                <video src="New folder/e745f418663f4649924d9daa420ca712.mov" muted loop playsinline></video>
+                <div class="play-overlay">▶</div>
+            </div>
+            <div class="gallery-item video-item" onclick="openLightbox('New folder/e805235cca974010b3d53edd0acd11fa.mov', 'video')">
+                <video src="New folder/e805235cca974010b3d53edd0acd11fa.mov" muted loop playsinline></video>
+                <div class="play-overlay">▶</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <div id="lightbox-content" class="lightbox-content"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
